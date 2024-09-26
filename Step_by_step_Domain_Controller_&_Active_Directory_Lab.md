@@ -91,9 +91,66 @@ Now that we're back on the Managment Dashboard were going to click on the flag w
 --------------------------------------------------------------------------------------------
 
 ![Screenshot (70)](https://github.com/user-attachments/assets/2226b4d7-899f-4f4a-9a69-12418db73579)
-You will then be greeted by a configuration window. You want to select new forest as it is a brand new directroy and name your domain in my case i will be naming it githubdomain.com but you can name it anyhting you like an example being newdomain.com.
+A configuration window will pop up. You want to select new forest as it is a brand new directroy and name your domain. In my case I will be naming it githubdomain.com but you can name it anyhting you like an example being newdomain.com. Click Next
 
 ---------------------------------------------------------------------------------------------
+
+![Screenshot (71)](https://github.com/user-attachments/assets/da7c9ab1-2692-4b91-a4ba-05f00739794d)
+On the next page we will enter a password for DSRM we won't be using this in the lab but it is mandatory to continue the installation so enter a password and click next.
+
+----------------------------------------------------------------------------------------------
+
+![Screenshot (72)](https://github.com/user-attachments/assets/1045b1bc-af05-4112-b35f-f47d119b0ab1)
+Click Next without checking the DNS Delegation Box.
+
+----------------------------------------------------------------------------------------------
+
+![Screenshot (73)](https://github.com/user-attachments/assets/d4affedc-d6a9-4a11-8071-2b9dd2bff47f)
+It may take a minute to resolve the NETBIOs Domain Name once it does you will see the domain name you have entered earlier and click next.
+
+----------------------------------------------------------------------------------------------
+
+![Screenshot (74)](https://github.com/user-attachments/assets/b5d9ec21-7465-455d-97da-13b489a199fa)
+Click Next
+
+----------------------------------------------------------------------------------------------
+
+![Screenshot (75)](https://github.com/user-attachments/assets/12c7b529-f087-4db6-9bf5-31034a88d165)
+Click Next
+
+----------------------------------------------------------------------------------------------
+
+![Screenshot (76)](https://github.com/user-attachments/assets/ede6e3e5-73cf-49e1-99cd-626c176a145a)
+Now it will take some time to do a prerequisite check so leave it alone. Once it finishes the check press Install. Once install finishes click close.
+
+----------------------------------------------------------------------------------------------
+
+![Screenshot (79)](https://github.com/user-attachments/assets/6723b2a4-062c-449c-912c-bbaa665f08a5)
+Now we will navigate to the start menu and search for Active Directory Users and Computers and Click. 
+
+----------------------------------------------------------------------------------------------
+
+![Screenshot (81)](https://github.com/user-attachments/assets/91d39405-c9a6-49c3-844f-68168c9e59c1)
+A window will pop-up. This is where we can create an Admin User to control the Active Directory Server. 
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (82)](https://github.com/user-attachments/assets/e131b5f8-b872-4af8-b222-72c8ebf36604)
+We will right click on the domain in my case githubdomain.com. We will then navigate to new and select organizational unit. An organizational unit is very simply put like a folder in active directory. 
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (83)](https://github.com/user-attachments/assets/aec22767-650d-4479-9d03-d4c865f051da)
+We will name this Organizational Unit _ADMINS and click okay.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (84)](https://github.com/user-attachments/assets/3f906513-9c1e-483b-b762-278fd4b7b8d3)
+
+
+
+
+
 
 
 
