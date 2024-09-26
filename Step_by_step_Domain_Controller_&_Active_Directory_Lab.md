@@ -146,11 +146,109 @@ We will name this Organizational Unit _ADMINS and click okay.
 -----------------------------------------------------------------------------------------------
 
 ![Screenshot (84)](https://github.com/user-attachments/assets/3f906513-9c1e-483b-b762-278fd4b7b8d3)
+We will now right click our new Organizational unit _ADMINS hover over New and select User
 
 
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (85)](https://github.com/user-attachments/assets/ddfac67c-74ac-4c4a-8b07-c6439276624d)
+Now we will fill out our information to create the new Admin account. For user logon name I used a-kkamal where (a) represents admin and then kkamal my first initial and last name. But you can name it whatever you like. Click Next
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (86)](https://github.com/user-attachments/assets/fdeb4801-917c-48bb-a6d2-686d5c122323)
+Here we can input our password and confirm it then Click Next. I also choose to uncheck the change password at next logon and check password never expires simply because its a lab environment it would not be advisable in a real world scenario.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (87)](https://github.com/user-attachments/assets/b87ad274-18ab-42c5-aefc-f2db79a09074)
+Click Finish
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (88)](https://github.com/user-attachments/assets/3cb693aa-0163-4c24-85a9-d1ca80f44952)
+Now if we click on the folder _ADMINS we will see our freshly made account. But just because its in a Organizational Unit named _ADMINS doesnt mean it has administrative privileges for that we'll need to double click on the account.
+
+-----------------------------------------------------------------------------------------------
 
 
+![Screenshot (89)](https://github.com/user-attachments/assets/e0b63df7-b9ff-4548-a8f2-e6bc628fd2f7)
+Lets navigate to the tab Members of and once on that tab click Add. We are going to add our new account to the Domain Admins Object.
 
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (90)](https://github.com/user-attachments/assets/5f1a4179-f7b7-4142-b92f-24c677779994)
+Enter Domain Admins into the textbox and click next. 
+
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (91)](https://github.com/user-attachments/assets/977054c0-6220-4d47-b3af-52b356912038)
+As you can see our user is now a member of Domain Admins as well as Domain Users. Click Apply and then OK.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (92)](https://github.com/user-attachments/assets/87e16b26-e61b-453d-bf74-8654c542c9f0)
+We're now going to go to the start menu and sign out from our default administrator account.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (93)](https://github.com/user-attachments/assets/7bb0080b-29d2-4bad-ae4f-efc05ec5ca26)
+When we end up on the lock screen were going to select other user in the bottom left corner. As you can see under password it says sign into githubdomain. 
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (94)](https://github.com/user-attachments/assets/f7dd827e-1fb3-4215-9f23-944a13f847fb)
+We will login using our new githubdomain admin account.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (95)](https://github.com/user-attachments/assets/5b773e16-7247-448c-a3c8-93321c1168f4)
+After logging in and letting the Server Manager load we're going to click on Add Roles And Features. Click Next
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (96)](https://github.com/user-attachments/assets/29e9d7f7-168d-4a8f-b8c4-ddcf8a864fc6)
+Click Next until you see
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (99)](https://github.com/user-attachments/assets/a631c024-1ca4-4b87-9570-3afaad1d53ff)
+Once you hit the server roles page we are going to scroll down ann check Remote Access. We need to enable remote access to be able to have our client computer on a segmented internal network while still allowing the client to access the Internet through the domain controller.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (102)](https://github.com/user-attachments/assets/fa7a7021-00cb-472e-be61-1030737700ad)
+We're going to continue to click next until we get to the Role Services tab. Once there check routing and then click Add Features, then click Install.
+
+-----------------------------------------------------------------------------------------------
+
+
+![Screenshot (104)](https://github.com/user-attachments/assets/6d38df7e-0200-4fd3-8b93-cddbe64a84e4)
+As you can see we now have AD(Active Directory) server installed and configured as well as DNS and remote Access.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (105)](https://github.com/user-attachments/assets/dfddbbae-e9e5-4293-b10a-e329d1ee3013)
+Now we will click on Tools in the top right corner and click on Routing and Remote Access.
+
+----------------------------------------------------------------------------------------------
+
+![Screenshot (107)](https://github.com/user-attachments/assets/b2f478e7-a844-4d33-be3b-665d4ef9c855)
+The Routing and Remote Access window will open up. Right click on DC(Local) and click configure and enable routing with remote access.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (108)](https://github.com/user-attachments/assets/b919c2c5-dba5-4d63-98da-926d8c8d7b7b)
+On the next page we are going to select NAT to enable all our clietns to connect to the internet using a single IP address The domain Controllers. Click Next
+
+-----------------------------------------------------------------------------------------------
+
+
+![Screenshot (111)](https://github.com/user-attachments/assets/78817f1a-f021-4cf1-9723-5a9c3151ecde)
+If you read the description of our option it says(Use this public interface to connect to the internet) we would select INTERNET as our public interface to connecct to the internet. Click Next and Click Finish
+
+-----------------------------------------------------------------------------------------------
 
 
 
