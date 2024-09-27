@@ -23,3 +23,4 @@ This network diagram outlines the setup for our upcoming lab environment. In thi
 ![Screenshot (149)](https://github.com/user-attachments/assets/5dadffeb-147c-433e-9fca-5804f720ba44)
 
 ## Steps
+| <a href="https://github.com/karamkamal1/Domain_Controller-ActiveDirectory_Configuration_Lab.md/blob/da2ba1fcb8104470adc8dc2e0c3c6e75e1b09ad3/Step_by_step_Domain_Controller_%26_Active_Directory_Lab.md">Guide</a>|
