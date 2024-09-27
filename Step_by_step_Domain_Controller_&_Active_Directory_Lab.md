@@ -250,12 +250,129 @@ If you read the description of our option it says(Use this public interface to c
 
 -----------------------------------------------------------------------------------------------
 
+![Screenshot (113)](https://github.com/user-attachments/assets/ea0178f8-50b3-4c19-ac59-1f5deda87135)
+Click OK
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (114)](https://github.com/user-attachments/assets/2205b525-c585-4394-881b-bf08ec6e16d0)
+Now we will right click the DC(Local) and press refresh. You will notice the arrow that was red before is now green. Indicating we have succesfully installed and configured NAT.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (115)](https://github.com/user-attachments/assets/496a5bff-8ec5-4010-84ec-b1aa8283f69b)
+Finally we will install DHCP on our Domain controller to automate the configuration of devices IP joining our Internal network. To do this we will click on Add Roles and Features and Click Next until we ge to the Server Roles Tab.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (117)](https://github.com/user-attachments/assets/a43a8dae-c05d-409d-9339-40308b5e8351)
+Check DHCP to install DHCP on our Domain Controller. Click next until the confirmation tab and Click Install. It will take some time but once it is finished click close.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (120)](https://github.com/user-attachments/assets/5325c640-2de4-4710-9d71-c71afe19a9db)
+Now we're going to configure DHCP. Click tools in the top right corner and select DHCP.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (122)](https://github.com/user-attachments/assets/08a40590-43d5-4f16-9e6a-0fb2875b5040)
+Expanding our dc.githubdomain we see IPV4 and IPV6 we are going to configure the scope on IPV4.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (122)](https://github.com/user-attachments/assets/70ad40f6-7177-477d-ab81-93233440e36e)
+To configure the IPV4 scope we will right click it and select New Scope. 
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (124)](https://github.com/user-attachments/assets/fa074700-7d80-486c-b510-94540fba29b2)
+Here we can name our scope. You can name it whatever you like for example HR or Sales. In this case we are going to name it the same as the IP range we are giving it. 172.16.0.100-200
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (125)](https://github.com/user-attachments/assets/4af05fef-e2c6-44ed-8e5a-6631c41e650c)
+Now we create our scope, we will set it from 172.16.0.100 - 176.16.0.200. We will select a length of 24. We chose a /24 subnet for our IP scope because it allows for up to 254 usable IP addresses within the range. Subnet Mask will be 255.255.255.0 but shoudl be automatically set when we enter the length. Click Next
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (126)](https://github.com/user-attachments/assets/30cb49b2-d668-4324-8f6f-57b23a791dc3)
+Click next on the Add Exclusions as we dont need to reserve or block any particular IP address from being used.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (127)](https://github.com/user-attachments/assets/f2fccf0d-996d-4952-99d3-e8e30546db59)
+Lease duration is how long a certain IP will be reserved for. For example lets say I connect my phone to a network and the lease time is set for 8 days. Even if my phone is no longer connected to the network that IP cannot be used by another device until the lease expires. In a lab environment 8 days is fine. In a corporate environment you may choose to change it. Click Next
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (128)](https://github.com/user-attachments/assets/9ebe0c96-6fbf-4c11-9582-0523676c7393)
+Click Next
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (129)](https://github.com/user-attachments/assets/3dc02ac8-0342-4e4e-91c4-87695690aa11)
+Since we have routing enabled on our Domain Controller we're going to enter our Domain Controllers IP 172.16.0.1 and click Add. Click Next.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (130)](https://github.com/user-attachments/assets/97f1d41a-d27f-4357-8a57-6198e5118f22)
+Click Next.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (131)](https://github.com/user-attachments/assets/9a60e208-073b-43e4-b045-a374c92e043c)
+We aren't going to use WINS Server so click Next.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (132)](https://github.com/user-attachments/assets/bbe4683f-12d1-43dd-a2f2-02e4cab25c76)
+Click Next.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (134)](https://github.com/user-attachments/assets/95df4c4e-b801-4804-a13b-cff99398afc3)
+Right click dc.githubdomain and select authorize to apply the changes. Then right click again select refresh. 
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (135)](https://github.com/user-attachments/assets/2b6c23da-0692-4ea4-a768-46bc2b832911)
+We now have our IPV4 Scope configured as you can see by our green arrows indicating they are up. Now close this window.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (136)](https://github.com/user-attachments/assets/db7640ea-e0c7-46bd-9656-1e48cce9078b)
+Now we need to create a new organizational unit called _USERS to add the account information 
+of the users on our domain. Go to start and search for Active Directory Users and Computers.
+
+-----------------------------------------------------------------------------------------------
 
 
+![Screenshot (137)](https://github.com/user-attachments/assets/d2022f8d-af80-41bc-9269-5225ff98b9fb)
+We will right click githubdomain.com and hover over New and select Organizational Unit.
 
+-----------------------------------------------------------------------------------------------
 
+![Screenshot (138)](https://github.com/user-attachments/assets/5a03ef67-e1f1-4d79-ac60-a0b21182d1a5)
+We will name it _USERS. Click OK.
 
+-----------------------------------------------------------------------------------------------
 
+![Screenshot (139)](https://github.com/user-attachments/assets/eb6b2188-bb84-4779-b5e6-72a62464e8be)
+Click on _USERS. Right Click inside of it, hover over New and select User.
 
+-----------------------------------------------------------------------------------------------
 
+![Screenshot (144)](https://github.com/user-attachments/assets/a0fefa3e-94d2-439b-8bac-e6287753c10f)
+Enter the information required. I will follow the same naming convention as I did earlier initial of the first name and last name. In this case kkamal. Click Next and enter a password then Click Next and Finish
 
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (147)](https://github.com/user-attachments/assets/e26248ee-88dd-41bf-9cd2-74726762d1cd)
+You will see your user appear. I have also made a couple more user accounts to simulate more of a corporate environment.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (148)](https://github.com/user-attachments/assets/cdc2e169-5185-4ef7-8086-402a374660c1)
+
+We are now done configuring our Domain Controller with Active Directory Server, DHCP, DNS, Remote Access and Routing. As well as create an admin and user accounts for Active Directory. 
+Congrats (:
