@@ -16,11 +16,12 @@ The objective of the lab is to configure and manage network infrastructure throu
 - VMware to host the server alongside the client computer
 - Server Manager
 - Server Configuration Tools
-
+- Active Directory Users and Computers configuration
+  
 
 ## Diagram
 This network diagram outlines the setup for our upcoming lab environment. In this scenario, the client computer is configured to route all internet traffic through the internal network, ultimately passing through the domain controller for internet access. This design utilizes a domain controller (DC) that serves dual purposes: managing domain resources and handling network routing with RAS/NAT functionalities. 
 ![Screenshot (149)](https://github.com/user-attachments/assets/5dadffeb-147c-433e-9fca-5804f720ba44)
 
-## Steps
-| <a href="https://github.com/karamkamal1/Domain_Controller-ActiveDirectory_Configuration_Lab.md/blob/da2ba1fcb8104470adc8dc2e0c3c6e75e1b09ad3/Step_by_step_Domain_Controller_%26_Active_Directory_Lab.md">Guide</a>|
+## Step by Step For Lab
+<a href="https://github.com/karamkamal1/Domain_Controller-ActiveDirectory_Configuration_Lab.md/blob/da2ba1fcb8104470adc8dc2e0c3c6e75e1b09ad3/Step_by_step_Domain_Controller_%26_Active_Directory_Lab.md">Step By Step</a>
