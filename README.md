@@ -29,4 +29,4 @@ In this lab, I configured a Domain Controller, including setting up and enabling
 This setup ensures centralized management of the network, user authentication, IP address assignment, and domain services. While also forcing a internet connection through our Domain Controller for a connected client. 
 
 ## Step by Step For Lab
-<a href="https://github.com/karamkamal1/Domain_Controller-ActiveDirectory_Configuration_Lab.md/blob/da2ba1fcb8104470adc8dc2e0c3c6e75e1b09ad3/Step_by_step_Domain_Controller_%26_Active_Directory_Lab.md">Step By Step</a>
+<a href="https://github.com/karamkamal1/Domain_Controller-Active-Directory_Configuration_Lab.md/blob/b877a1ccfceb92ad4a78eb88b346e8d98b5f9a47/Step_by_step_Domain_Controller_%26_Active_Directory_Lab.md">Step By Step</a>
