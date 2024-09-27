@@ -376,3 +376,7 @@ You will see your user appear. I have also made a couple more user accounts to s
 
 We are now done configuring our Domain Controller with Active Directory Server, DHCP, DNS, Remote Access and Routing. As well as create an admin and user accounts for Active Directory. 
 Congrats (:
+
+-----------------------------------------------------------------------------------------------
+https://github.com/karamkamal1/Domain_Controller-Active-Directory_Configuration_Lab.md/blob/e14a288b119d4304adf4205d642f776fdc8b8542/Client_Connection_Step_By_Step.md
+Now time to connect the CLIENT computer to the Domain.
