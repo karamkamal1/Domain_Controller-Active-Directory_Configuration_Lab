@@ -35,4 +35,4 @@ Challenge: Initially there was an issue with the DHCP scope not assigning IP's c
 Solution: The issue was related to an incorrect subnet mask once correcting that ensuring the scope was correctly defined, the client recieved an IP address. 
 
 ## Step by Step For Lab
-<a href="https://github.com/karamkamal1/Domain_Controller-Active-Directory_Configuration_Lab.md/blob/b877a1ccfceb92ad4a78eb88b346e8d98b5f9a47/Step_by_step_Domain_Controller_%26_Active_Directory_Lab.md">Step By Step</a>
+<a href="https://github.com/karamkamal1/Domain_Controller-Active-Directory_Configuration_Lab.md/blob/b877a1ccfceb92ad4a78eb88b346e8d98b5f9a47/Step_by_step_Domain_Controller_%26_Active_Directory_Lab.md">Link To Full Lab</a>
