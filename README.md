@@ -7,8 +7,8 @@ The objective of the lab is to configure and manage network infrastructure throu
 ### Skills Learned
 
 - Understanding of IP addresses and network configuration
-- A more advanced understanding of windows server operating system and configuration.
-- Enchanced knowledge of dorporate domain setup with active directory
+- A more advanced understanding of Windows server operating system and configuration.
+- Enhanced knowledge of a corporate domain setup with active directory
 
 
 ### Tools Used
@@ -26,13 +26,13 @@ This network diagram outlines the setup for our upcoming lab environment. In thi
 ## Summary of Lab
 In this lab, I configured a Domain Controller, including setting up and enabling Active Directory, DNS, and DHCP services. I defined a DHCP scope to manage IP address distribution within the network. A domain named githubdomain.com was created during the configuration. Additionally, I set up two Organizational Units within Active Directory Users and Computers, one for Admin accounts and one for Users where I added three user accounts and one admin account.
 
-This setup ensures centralized management of the network, user authentication, IP address assignment, and domain services while granting us the ability to impliment Group Policies. While also forcing a internet connection through our Domain Controller for a connected client. 
+This setup ensures centralized management of the network, user authentication, IP address assignment, and domain services while granting us the ability to implement Group Policies. While also forcing internet connection through our Domain Controller for domain clients. 
 
 ## Challenges and Solutions
 ### DHCP Configuration Errors
-Challenge: Initially there was an issue with the DHCP scope not assigning IP's correctly to the client machinces.
+Challenge: Initially there was an issue with the DHCP scope not assigning IP's correctly to the client machines.
 
-Solution: The issue was related to an incorrect subnet mask once correcting that ensuring the scope was correctly defined, the client recieved an IP address. 
+Solution: The issue was related to an incorrect subnet mask once correcting that ensuring the scope was correctly defined, the client received an IP address. 
 
 ## Step by Step For Lab
 <a href="https://github.com/karamkamal1/Domain_Controller-Active-Directory_Configuration_Lab.md/blob/b877a1ccfceb92ad4a78eb88b346e8d98b5f9a47/Step_by_step_Domain_Controller_%26_Active_Directory_Lab.md">Link To Full Lab</a>
